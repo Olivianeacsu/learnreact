@@ -1,6 +1,6 @@
-if(true) {
-    var name = 'Ryan';
-    alert(name);
-}
+let fname = 'Ryan';
+let lname = 'D';
+let age = prompt("Guess  Ryan's age ..");
 
-alert(name);
+let result = `Hello ${fname} ${lname}, you are ${age} years old.`;
+alert(result);
