@@ -5,4 +5,4 @@ let createBlog = (title, body) => {
     return alert(`${title} - ${body}`);
 }
 
-createBlog();
+createBlog('Blog title', 'Blog body');
