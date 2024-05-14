@@ -22,3 +22,8 @@ let thingsTodDo = {
 let {morning, afternoon} = thingsTodDo;
 
 console.log(morning, ' - ', afternoon);
+
+// Destructuring array
+let [, firstMountain] = ['Everest', 'Carpathians', 'Himmalaya', 'Andes']
+
+console.log(firstMountain);
