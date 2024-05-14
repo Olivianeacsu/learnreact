@@ -1,3 +1,4 @@
+/*
 let createBlog = (title, body) => {
     if (!title || !body) {
         throw new Error('A blog must have a title and body')
@@ -6,3 +7,18 @@ let createBlog = (title, body) => {
 }
 
 createBlog('Blog title', 'Blog body');
+
+ */
+
+// Destructuring object
+
+let thingsTodDo = {
+    morning: 'Exercise',
+    afternoon: 'Work',
+    evening: 'Code',
+    night: ['Sleep', 'Dream']
+}
+
+let {morning, afternoon} = thingsTodDo;
+
+console.log(morning, ' - ', afternoon);
