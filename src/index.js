@@ -30,7 +30,7 @@ console.log(firstMountain);
 */
 
 // Restructuring object
-
+/*
 var name = "Everest";
 var height = 8848;
 var output = function(){
@@ -39,3 +39,24 @@ var output = function(){
 
 var adventureClimbing = {name, height, output};
 adventureClimbing.output();
+*/
+
+// Spread operator - on arrays
+var mountains = ['Everest', 'Carpathians', 'Himmalaya', 'Andes'];
+var mountainsFromJapan =  ['Fuji', 'Alps', 'Hakusan'];
+
+var allMountains = [...mountains, ...mountainsFromJapan];
+console.log(allMountains);
+
+// Spread operator - on objects
+var day = { breakfast: 'toast', lunch: 'rice'}  ;
+var night = { dinner: 'pasta', desert: 'cake'};
+
+var picnic = {...day, ...night};
+console.log(picnic);
+
+//rest operator
+var rivers =  ['Nile', 'Amazon', 'Yangtze', 'Mississippi'];
+
+var [first, ...rest] = rivers;
+console.log(rest);
