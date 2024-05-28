@@ -39,7 +39,7 @@ var output = function(){
 
 var adventureClimbing = {name, height, output};
 adventureClimbing.output();
-*/
+
 
 // Spread operator - on arrays
 var mountains = ['Everest', 'Carpathians', 'Himmalaya', 'Andes'];
@@ -60,3 +60,36 @@ var rivers =  ['Nile', 'Amazon', 'Yangtze', 'Mississippi'];
 
 var [first, ...rest] = rivers;
 console.log(rest);
+
+ */
+
+// Classes
+class Holiday {
+    constructor(destination, days){
+        this.destination = destination;
+        this.days = days;
+    }
+
+    info(){
+        console.log(`${this.destination} will take ${this.days} days`);
+    }
+}
+
+const trip = new Holiday('Nairobi', 7);
+console.log(trip.info());
+
+// subclasses
+class Expedition extends Holiday {
+    constructor(destination, days, gear){
+        super(destination, days);
+        this.gear = gear;
+    }
+
+    info(){
+        super.info();
+        console.log(`Bring your ${this.gear.join(' and your ')}`);
+    }
+}
+
+const tripWithGear = new Expedition('Egypt', 14, ['sunglasses', 'camera']);
+tripWithGear.info();
